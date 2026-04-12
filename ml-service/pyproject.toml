@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "cloudguard-ml-service"
+version = "0.1.0"
+description = "ML microservice for forecasting, baselines, anomalies, scenarios"
+authors = ["Hackathon Team"]
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+fastapi = "^0.115.0"
+uvicorn = { version = "^0.30.0", extras = ["standard" ] }
+pandas = "^2.2.2"
+numpy = "^2.0.1"
+prophet = "^1.1.5"
+pydantic = "^2.8.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

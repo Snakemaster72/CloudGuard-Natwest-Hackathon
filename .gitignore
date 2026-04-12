@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Environment files / secrets
+.env
+.env.*
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+!ml-service/.env.example
+
+# Logs / runtime artifacts
+*.log
+/tmp/
+
+# Docker runtime volumes / overrides
+postgres_data/
+
+# Data
+# Keep the canonical dataset tracked:
+!data/synthetic_cloud_costs.csv
+# Ignore ad-hoc local datasets/exports
+data/*.csv
+!data/synthetic_cloud_costs.csv
+
+# Legacy / optional
+.streamlit/
