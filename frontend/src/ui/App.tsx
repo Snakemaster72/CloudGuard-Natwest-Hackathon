@@ -900,7 +900,7 @@ export default function App() {
       </main>
 
       <footer className="mx-auto max-w-6xl px-6 pb-10 text-xs text-slate-500">
-        CloudGuard MVP (local). Next: service/provider breakdown, explain panel, budgets & alerts.
+        {/* Intentionally left minimal for a judge-ready demo (no roadmap text). */}
       </footer>
     </div>
   )
